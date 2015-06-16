@@ -27,3 +27,7 @@ To use this primes multiplication table generator you have to run the following 
 To run the tests use the following command:
 
     rake spec
+
+## Other considerations
+
+Done with ruby 2.2.0
