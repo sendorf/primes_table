@@ -7,6 +7,8 @@ module PrimesTable
 			puts table
 		end
 
+		protected
+
 		# Generates the header and the separator
 		def generate_header_string horizontal_array, max_columns_size
 			header = generate_line_string horizontal_array, max_columns_size
