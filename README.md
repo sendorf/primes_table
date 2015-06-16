@@ -6,7 +6,7 @@ Utility for generating a multiplication table of the first X prime numbers.
 
 To use this primes multiplication table generator you have to run the following command, where 'X' extends for the size of the table:
 
-    primes_table --count X
+    ./primes_table --count X
 
 
        |  2  3   5   7  11  13  17  19  23  29

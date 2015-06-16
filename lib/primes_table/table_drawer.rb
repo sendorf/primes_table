@@ -14,6 +14,7 @@ module PrimesTable
 			return header
 		end
 
+		# Generates the body of the table
 		def generate_body_string horizontal_array, vertical_array, max_columns_size
 			body = ""
 			vertical_array.each do |value|

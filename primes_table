@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require_relative 'lib/primes_table'
+
+PrimesTable::Exec.new.execute
