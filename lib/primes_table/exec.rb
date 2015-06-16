@@ -6,11 +6,11 @@ module PrimesTable
       @options = {}
 
       OptionParser.new do |option|
-        option.on('--count Integer') do |value|
+        option.on("--count X", "-c X", "Draws a multiplication table for the X first prime numbers") do |value|
           @options[:count] = value.to_i
         end
-        option.on('--version') do
-          puts "Table Time. Version: #{VERSION}"
+        option.on("-h", "--help", "Prints this help") do
+          puts option
           exit
         end
       end.parse!
