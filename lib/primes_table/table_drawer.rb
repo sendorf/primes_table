@@ -1,6 +1,6 @@
 module PrimesTable
 	class TableDrawer
-		def draw array
+		def draw horizontal_array vertical_array
 
 		end
 	end
