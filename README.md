@@ -22,6 +22,18 @@ To use this primes multiplication table generator you have to run the following 
     23 | 46 69 115 161 253 299 391 437 529 667
     29 | 58 87 145 203 319 377 493 551 667 841
 
+Also it can be used with square numbers instead of prime numbers, to enable this option you have to use the program like this:
+
+    ./primes_table --square --count X
+
+The result for this would be something like this:
+
+      | 1  4  9
+    --+--------
+    1 | 1  4  9
+    4 | 4 16 36
+    9 | 9 36 81
+
 ## Tests
 
 To run the tests use the following command:
