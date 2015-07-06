@@ -13,11 +13,14 @@ module PrimesTable
           puts option
           exit
         end
+        option.on("-s", "--square", "Draws a multiplication table for the X first square numbers") do 
+          @options[:square] = true
+        end
       end.parse!
     end
 
     def execute
-      primes_array = PrimesGenerator.new.generate @options[:count]
+      primes_array = (@options[:square] ? SquaresGenerator.new.generate(@options[:count]) : PrimesGenerator.new.generate(@options[:count]))
       table = TableDrawer.new.draw primes_array, primes_array
     end
   end

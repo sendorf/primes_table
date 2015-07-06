@@ -7,6 +7,12 @@ describe 'Execute primes_table' do
     end
   end
 
+  context '--square' do
+    it 'prints the multiplication table of the first 3 square numbers' do
+      expect(`ruby #{Dir.pwd}/primes_table --square --count 3`).to eql expected_square_output
+    end
+  end
+
   def expected_output
     "   |  2  3   5   7  11  13  17  19  23  29\n" \
     "---+--------------------------------------\n" \
@@ -21,4 +27,13 @@ describe 'Execute primes_table' do
     "23 | 46 69 115 161 253 299 391 437 529 667\n" \
     "29 | 58 87 145 203 319 377 493 551 667 841\n"
   end
+
+  def expected_square_output
+    "  | 1  4  9\n" \
+    "--+--------\n" \
+    "1 | 1  4  9\n" \
+    "4 | 4 16 36\n" \
+    "9 | 9 36 81\n"
+  end
+
 end
